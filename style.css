@@ -1,0 +1,444 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.cabecalho {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.geral {
+    display: flex;
+}
+
+.contatos button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0B60B0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+h2.titulo {
+    color: #F0EDCF;
+    font-size: 40px;
+    text-align: center;
+}
+
+li.obs {
+    list-style: none;
+}
+
+/* cabecalho */
+header {
+    padding: 40px 4%;
+}
+
+header>.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #8a8876;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #F0EDCF;
+    transform: scale(1.05);
+    display: inline-block;
+    transition: .3s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.contatos button:hover {
+    box-shadow: 0px 0px 8px #0b60b0;
+    transform: scale(1.05);
+}
+
+/* topo */
+
+section#topo {
+    padding: 40px 4%;
+}
+
+section#topo .geral {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+#topo h1 {
+    color: #F0EDCF;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.img-topo img {
+    border-radius: 50%;
+}
+
+.txt-topo p {
+    color: #F0EDCF;
+    margin: 40px 0px;
+}
+
+/* tecnologias que domino */
+
+section#tecnologias {
+    padding: 40px 4%;
+}
+
+section#tecnologias .geral {
+    gap: 60px;
+}
+
+#tecnologias .tec-caixas {
+    color: #F0EDCF;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+#tecnologias .tec-caixas i {
+    font-size: 80px;
+    color: #40A2D8;
+}
+
+#tecnologias .tec-caixas h3 {
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+#tecnologias .tec-caixas:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #F0EDCF;
+
+}
+
+/* sobre mim */
+
+section#sobremim {
+    padding: 40px 4%;
+}
+
+section#sobremim .interface h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #F0EDCF;
+}
+
+.foto2 img {
+    border-radius: 30px;
+}
+
+.info {
+    margin: 0;
+    padding: 0px 100px;
+    color: #F0EDCF;
+}
+
+.info h3 {
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 40px;
+}
+
+.info ul {
+    font-size: 20px;
+}
+
+.info ul li {
+    list-style-type: circle;
+}
+
+/* pontos p/n */
+
+section#pontospn {
+    padding: 40px 4%;
+}
+
+section#pontospn .geral {
+    color: #F0EDCF;
+    gap: 90px;
+}
+
+section#pontospn .interface h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #F0EDCF;
+}
+
+#pontospn .pontos {
+    align-items: center;
+    justify-content: space-between;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pontos {
+    display: inline-block;
+    width: 45%;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #F0EDCF;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.pontos ul {
+    font-size: 20px;
+    list-style: lower-roman;
+}
+
+.pontos:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #F0EDCF;
+}
+
+/* experiencias */
+
+section#experiencias{
+    padding: 40px 4%;
+}
+
+section#experiencias .geral {
+    overflow-x: auto;
+}
+
+section#experiencias .titulo {
+    padding: 30px 0px;
+}
+
+table {
+    background-color: #073158;
+    border-radius: .4em;
+    width: 100%;
+    padding: 5px;
+}
+
+thead th {
+    color: #dd5;
+    text-decoration: inherit;
+    text-align: left;
+}
+
+tbody td{
+    color: #F0EDCF;
+}
+
+/* contatos */
+
+section#contato {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #353535;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .botao {
+    margin-top: 40px;
+    text-align: center;
+}
+
+form .botao input {
+    width: 120px;
+    background-color: #0b60b0;
+    color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form .botao input:hover {
+    box-shadow: 0px 0px 8px #0b60b0;
+    transform: scale(1.05);
+}
+
+/* rodape */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #494949;
+}
+
+footer .geral {
+display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+footer .linha {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 0px;
+}
+
+.borda {
+    border-top: 2px solid #0b60b0;
+}
+
+.msg {
+    align-self: flex-end; 
+}
+
+.redes {
+    align-self: flex-start;
+}
+
+.redes button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0b60b0;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.redes button:hover {
+    box-shadow: 0px 0px 8px #0b60b0;
+    transform: scale(1.05);
+}
+
+.msg h4 {
+    color: #F0EDCF;
+    font-size: 30px;
+}
+
+footer .linha p i {
+    color: #0b60b0;
+    font-size: 20px;
+}
+
+footer .linha p a {
+    color: #F0EDCF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* responsivo */
+
+@media (max-width: 1024px) {
+    .geral {
+        flex-direction: column;
+    }
+    .txt-topo,
+    .img-topo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        padding: 0 20px;
+    }
+    .contatos button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .geral {
+        flex-direction: column;
+    }
+    .tec-caixas {
+        width: 100%;
+        text-align: center;
+    }
+    .foto2 img {
+        width: 100%;
+    }
+    .info {
+        padding: 0px;
+    }
+    form {
+        max-width: 100%;
+    }
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .txt-topo h1 {
+        font-size: 30px;
+    }
+    .img-topo img {
+        width: 80%;
+    }
+    .info {
+        padding: 0px;
+    }
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pontos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .pontos h3 {
+        width: 100%;
+    }
+
+    .pontos ul li {
+        width: 50%;
+    }
+}
+
+
